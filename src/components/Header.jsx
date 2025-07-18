@@ -14,7 +14,7 @@ function Header({categories}) {
       <section className='sticky z-50 top-0 left-0 w-full flex flex-col lg:flex-row justify-between gap-4 py-4 items-center bg-black text-white px-6 md:px-12 lg:px-20'>
             <div className="flex w-full lg:w-auto justify-between items-center">
                 <Link href={"/"} className='text-xl font-semibold'>
-                    News<span className='text-red-400'>Week</span>
+                    News<span className='text-red-500'>Week</span>
                 </Link>
                 <button 
                     className="lg:hidden cursor-pointer"

@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       >
         <main className="w-full min-h-screen">
           <Header categories={categories}/>
-          <section className="w-full px-6 md:px-12 lg:px-20 py-10">
+          <section className="w-full px-3 md:px-12 lg:px-20 py-10">
             {children}
           </section>
           <Footer />
