@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "NewsWeek top Headlines news.",
-  description: "Get the latest headlines from 1000s of sources in one place.",
+  title: "KhabarGaam | Top Headlines news.",
+  description: "Get the latest headlines from 1000s of sources in one place. business news, tech news, political news.",
   icons: {
     icon: '/favicon.ico'
   }
