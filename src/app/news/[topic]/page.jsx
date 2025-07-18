@@ -14,7 +14,7 @@ const Page = async ({params}) => {
     return (
         <section className="w-full min-h-screen">
             <h1 className="text-3xl font-semibold mb-10">
-                Top Headlines / {topic}
+                Top Headlines / {decodeURIComponent(topic)}
             </h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-8">
                 {articles.map((article, i) => (

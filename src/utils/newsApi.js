@@ -1,4 +1,4 @@
-const API_KEY = process.env.NEWS_API_KEY || "a4b6e5fd4a5a45038433d6a4e3646b2a";
+const API_KEY = process.env.NEWS_API_KEY;
 const BASE_URL = "https://newsapi.org/v2/top-headlines";
 
 export async function fetchTopHeadlines() {

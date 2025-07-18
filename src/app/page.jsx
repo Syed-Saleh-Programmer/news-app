@@ -1,9 +1,10 @@
 import HorizontalCard from "@/components/HorizontalCard";
 import { fetchTopHeadlines } from "@/utils/newsApi"
+import Link from "next/link";
 
 async function page() {
     const data = await fetchTopHeadlines();
-    if(!data){
+    if (!data) {
         return (
             <section className="w-full min-h-[calc(100vh-150px)] flex justify-center items-center text-red-600 text-lg">
                 Failed to Fetch News.
@@ -20,6 +21,21 @@ async function page() {
                 {articles.map((article, i) => (
                     <HorizontalCard article={article} key={i} />
                 ))}
+                {articles.length == 0 && (
+                    <div className="">
+                        <p>No Articles found for the topic</p>
+                        <p>
+                            Search for
+                            <Link
+                            href={"/news/business"}
+                                className="text-blue-600 underline underline-offset-4"
+                            >
+                                Business
+                            </Link>
+                            instead
+                        </p>
+                    </div>
+                )}
             </div>
         </section>
     )

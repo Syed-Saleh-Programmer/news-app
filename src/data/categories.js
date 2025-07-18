@@ -1,5 +1,5 @@
 
 
-const categories = ["Business", "Politics", "Technology"]
+const categories = ["Business", "Politics", "Tech"]
 
 export default categories;
