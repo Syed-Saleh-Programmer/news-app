@@ -21,13 +21,15 @@ async function page() {
                 {articles.map((article, i) => (
                     <HorizontalCard article={article} key={i} />
                 ))}
+                
+            </div>
                 {articles.length == 0 && (
-                    <div className="">
+                    <div className="w-full">
                         <p>No Articles found for the topic</p>
                         <p>
                             Search for
                             <Link
-                            href={"/news/business"}
+                                href={"/news/business"}
                                 className="text-blue-600 underline underline-offset-4"
                             >
                                 Business
@@ -36,7 +38,6 @@ async function page() {
                         </p>
                     </div>
                 )}
-            </div>
         </section>
     )
 }
