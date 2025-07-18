@@ -4,8 +4,8 @@ import Image from "next/image"
 function HorizontalCard({ article }) {
     return (
         <Link href={article.url} target="_blank" rel="noopener noreferrer">
-            <div className="w-full h-[200px] flex flex-row group gap-4 overflow-hidden">
-                <div className="h-full aspect-square relative">
+            <div className="w-full h-[200px] flex flex-row group gap-4 overflow-hidden bg-stone-100 hover:bg-stone-200 transition-all p-3 rounded-lg">
+                <div className="h-full aspect-video relative rounded-lg overflow-hidden">
                     <Image 
                         src={article?.urlToImage} 
                         alt={article.title || 'News article'}

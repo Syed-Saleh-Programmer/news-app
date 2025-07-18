@@ -2,6 +2,8 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
+import SearchBox from './SearchBox'
+import { Menu } from 'lucide-react'
 
 
 function Header({categories}) {
@@ -15,14 +17,15 @@ function Header({categories}) {
                     News<span className='text-red-400'>Week</span>
                 </Link>
                 <button 
-                    className="lg:hidden"
+                    className="lg:hidden cursor-pointer"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
-                    ☰
+                    <Menu />
                 </button>
             </div>
             
-            <div className={`flex flex-col lg:flex-row gap-6 ${isMobileMenuOpen ? 'flex' : 'hidden lg:flex'} w-full lg:w-auto`}>
+            <div className={`flex flex-col lg:justify-center lg:items-center lg:flex-row gap-6 ${isMobileMenuOpen ? 'flex' : 'hidden lg:flex'} w-full lg:w-auto`}>
+                <SearchBox />
                 {categories && categories.map((category, index) => (
                     <Link href={`/news/${category.toLowerCase()}`} key={category}
                     className={`capitalize ${pathname === `/news/${category.toLowerCase()}` ? 'text-red-500 font-semibold' : 'text-white'} hover:underline underline-offset-3`}
