@@ -1,6 +1,6 @@
-# NewsWeek - News Aggregator App
+# KhabarGaam - News Aggregator App
 
-NewsWeek is a modern, fullstack news aggregator built with Next.js 13+ (App Router), React, and Tailwind CSS. It fetches the latest headlines from thousands of sources and presents them in a clean, responsive UI. Search for news by topic, browse categories, and enjoy fast, up-to-date content thanks to server-side revalidation.
+KhabarGaam is a modern, fullstack news aggregator built with Next.js 13+ (App Router), React, and Tailwind CSS. It fetches the latest headlines from thousands of sources and presents them in a clean, responsive UI. Search for news by topic, browse categories, and enjoy fast, up-to-date content thanks to server-side revalidation.
 
 ---
 
